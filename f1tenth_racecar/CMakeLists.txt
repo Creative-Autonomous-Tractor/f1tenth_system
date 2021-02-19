@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(f1tenth_racecar)
 
+add_compile_options(-std=c++17)
+
 find_package(catkin REQUIRED
   actionlib
   rospy
@@ -20,6 +22,11 @@ catkin_package(
     tf
     urg_node
 )
+
+include_directories(${catkin_INCLUDE_DIRS})
+
+add_executable(ourdrive src/ourdrive_node.cpp)
+target_link_libraries(ourdrive ${catkin_LIBRARIES})
 
 install(PROGRAMS
   scripts/joy_teleop.py

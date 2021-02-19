@@ -2,6 +2,6 @@
 <launch>
   <!-- laser -->
   <node pkg="urg_node" type="urg_node" name="laser_node">
-    <param name="serial_port" type="string" value="/dev/sensors/hokuyo"/>
+    <param name="ip_address" type="string" value="192.168.44.10"/>
   </node>
 </launch>

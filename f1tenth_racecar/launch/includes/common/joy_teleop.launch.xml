@@ -13,4 +13,5 @@
   <node pkg="joy" type="joy_node" name="joy_node" />
 
   <node pkg="f1tenth_racecar" type="joy_teleop.py" name="joy_teleop" />
+  <node pkg="f1tenth_racecar" type="ourdrive" name="ourdrive" />
 </launch>
