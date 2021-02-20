@@ -34,7 +34,7 @@ target_link_libraries(노드이름 ${catkin_LIBRARIES})
 
 ## launch 파일
 ```xml
-<node pkg="f1tenth_racecar" type=노드이름 name=파일이름 />
+<node pkg="f1tenth_racecar" type=노드이름 name=노드이름 />
 ```
 [원본 코드](https://github.com/Creative-Autonomous-Tractor/f1tenth_system/blob/6190b45897889e07dd640896fb96aed02ceec86d/f1tenth_racecar/launch/includes/common/joy_teleop.launch.xml#L16)
 
