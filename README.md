@@ -3,6 +3,7 @@ Jetson TX2 위에서 성공적으로 동작하는 ROS package입니다. 아래 �
 
 ## 사용하는 법
 만들어놓은 ROS workspace 내 `src` 폴더에서 `git clone`을 해서 다운을 받고, `catkin_make`를 통해 build를 해줍니다.
+추가적으로 `rosdep install --from-paths . -i -y`도 실행해줘야 필요한 dependency들이 설치됩니다.
 그 다음 `roslaunch f1tenth_racecar teleop.launch`를 실행해주면,
 컨트롤러의 왼쪽 범퍼를 누르고 있을 때는 직접 주행, 컨트롤러의 오른쪽 범퍼를 누르고 있을 때는 자율 주행 (미리 넣어놓은 주행 알고리즘)이 가능해집니다.
 아래 과정들을 통해 원하는 알고리즘을 바꿔 넣을 수 있습니다.
